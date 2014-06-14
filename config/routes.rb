@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
- root to: redirect('/scotty.html')
+ root to: 'visitors#new'
 end
