@@ -1,2 +1,20 @@
-<h1>this is a h1 tag </h1>
-<%= @owner.name.reverse %>
+<%content_for :title do%>Steven Scott<% end %>
+<%content_for :description do%>Website of Steven Scott<% end %>
+<section>
+	<img src"">
+</section>
+<section>
+	<div class= "column">
+		<h2>Stay in touch</h2>
+	</div>
+	<div class= "column">
+		<div clas="form-centered">
+			<%= simple_form_for @visitor do |f|%>
+			<%= f.error_notiication %>
+			<%= f.input :email, label: false, :placeholder => 'scotty6592@gmail.com'%>
+			<br/>
+			<%= f.button :sumbit, "sign up for the newsletter", :class => "submit" %>
+			<% end %>
+		</div>
+	</div>
+</section>
